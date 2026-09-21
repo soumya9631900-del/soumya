@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rahul Translator"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Language"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/sourceLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Enter text here..."
+            android:gravity="top"
+            android:padding="15dp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Language"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"/>
+
+        <Spinner
+            android:id="@+id/targetLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRANSLATE"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Translation will appear here..."
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#EEEEEE"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/copyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COPY"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/speakButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPEAK"/>
+
+    </LinearLayout>
+
+</ScrollView>
